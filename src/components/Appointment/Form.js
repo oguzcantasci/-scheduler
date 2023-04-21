@@ -45,14 +45,15 @@ export default function Form(props) {
             data-testid="student-name-input"
           />
         </form>
+        {error && (
+          <section className="appointment__validation">{error}</section>
+        )}
         <InterviewerList
           interviewers={props.interviewers}
           value={interviewer}
           onChange={setInterviewer}
         />
-         {error && (
-          <section className="appointment__validation">{error}</section>
-        )}
+        
       </section>
       <section className="appointment__card-right">
         <section className="appointment__actions">
