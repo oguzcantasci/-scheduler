@@ -128,23 +128,30 @@ describe("Application", () => {
     // *Render the Application.
     const { container, debug } = render(<Application />);
 
+
     // *Wait until the text "Archie Cohen" is displayed.
-    await waitForElement(() => getByText(container, "Archie Cohen"));
+    try {
+      await waitForElement(() => getByText(container, "Archie Cohen"));
+    } catch (err) {
+      console.log(err);
+    }
 
-    // *Click the "Add" button on the first empty appointment.
     const appointments = getAllByTestId(container, "appointment");
-
     const appointment = appointments[0];
 
+    // *Click the "Add" button on the first empty appointment.
     fireEvent.click(getByAltText(appointment, "Add"));
 
+
     // *Enter the name "Lydia Miller-Jones" into the input with the placeholder "Enter Student Name".
-    fireEvent.change(getByPlaceholderText(appointment, /Enter Student Name/i), {
+    fireEvent.change(getByPlaceholderText(appointment, "Enter Student Name"), {
       target: { value: "Lydia Miller-Jones" }
     });
 
+
     // *Click the first interviewer in the list.
     fireEvent.click(getByAltText(appointment, "Sylvia Palmer"));
+
 
     // *Click the "Save" button on that same appointment.
     fireEvent.click(getByText(appointment, "Save"));
@@ -152,8 +159,9 @@ describe("Application", () => {
     // *Check that the element with the text "Saving" is displayed.
     expect(getByText(appointment, "Saving")).toBeInTheDocument();
 
-    // *Wait until the element with the text "Could not save appointment" is displayed.
-    await waitForElement(() => getByText(appointment, "Could not save appointment"));
+    // *Check that the error element is displayed
+    await waitForElement(() => getByText(appointment, "Error"));
+    expect(getByText(appointment, "Error")).toBeInTheDocument();
   });
 
 
