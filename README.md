@@ -4,9 +4,9 @@
 
 Interview Scheduler is here! A modern, React-based scheduler app that enables the user to book, edit and cancel interviews.
 
-<img width="1713" alt="Screen Shot 2023-03-22 at 19 45 04" src="https://user-images.githubusercontent.com/36883798/227063502-7b2c5a8c-0f64-45ba-8da7-fb968c0db1ac.png">
+<img width="1700" alt="Book Picture" src="https://raw.githubusercontent.com/oguzcantasci/scheduler/master/docs/CreatePic.png">
 
-<img width="1713" alt="Screen Shot 2023-03-22 at 19 45 13" src="https://user-images.githubusercontent.com/36883798/227063631-4f705559-3a15-408a-b00b-8844956f9385.png">
+<img width="1700" alt="Edit Picture" src="https://raw.githubusercontent.com/oguzcantasci/scheduler/master/docs/EditPic.png">
 
 ## How To Use
 ### Book an Interview
