@@ -14,7 +14,7 @@ Interview Scheduler is here! A modern, React-based scheduler app that enables th
 - Type in the name of the interviewee's name and select an interviewer.
 - If no spots are available, feel free to choose another day from the list!
 
-![ADD GIF NEW](https://user-images.githubusercontent.com/36883798/227073473-f59558ab-9854-4df1-88e5-22fa012e1287.gif)
+![BOOK GIF](https://raw.githubusercontent.com/oguzcantasci/scheduler/master/docs/Book.gif)
 
 ### Edit an Interview
 - Hover over the appointment you wish to edit
@@ -22,14 +22,14 @@ Interview Scheduler is here! A modern, React-based scheduler app that enables th
 - Make changes
 - Save!
 
-![EDIT GIF](https://user-images.githubusercontent.com/36883798/227073561-28a82f62-f840-48f3-8b6d-69e71bc4066f.gif)
+![EDIT GIF](https://raw.githubusercontent.com/oguzcantasci/scheduler/master/docs/Edit.gif)
 
 ### Delete an Interview
 - Hover over the appointment you wish to delete
 - Click the delete button
 - Confirm!
 
-![DELETE GIF NEW](https://user-images.githubusercontent.com/36883798/227073287-35551b29-88df-4224-a265-cca3c1edc320.gif)
+![DELETE GIF](https://raw.githubusercontent.com/oguzcantasci/scheduler/master/docs/Delete.gif)
 
 ## Stack
 Interview Scheduler is a web application that uses modern React programming techniques like functional components and hooks. It consists of a front-end built using HTML, SCSS, and React, and a back-end that uses Node, Express, and PostgreSQL.
